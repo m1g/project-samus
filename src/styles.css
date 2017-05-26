@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {height: 100%}
+body {background: #ccc}
+
+/* Navbar Overrides */
+
+.navbar {border-radius: 0;}
+nav {background: #222;}
+.nav li a {padding-top: 15px;}
+
+.nav li a:hover {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+nav a:link,
+nav a:visited {
+  color: #fff;
+}
