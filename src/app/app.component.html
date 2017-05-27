@@ -1,16 +1,17 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle collapsed" (click)="toggleMenu()">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
-      </button>
+      </button> 
       <a class="navbar-brand" href="#">Project Samus</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" [ngClass]="{ 'in': isIn }">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Login</a></li>
+        <li class="active"><a href="#">Login <span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Blog</a></li> 
         <li><a href="#">Contact</a></li> 
@@ -18,4 +19,7 @@
     </div>
   </div>
 </nav>
+
+<!-- Main Content -->
+<router-outlet></router-outlet>
 

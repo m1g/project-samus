@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppRoutes } from './app.routes';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
     LandingPageComponent
   ],
   imports: [
+    AppRoutes,
     BrowserModule,
     FormsModule,
     HttpModule

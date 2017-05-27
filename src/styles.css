@@ -1,12 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Defaults */
 body, html {height: 100%}
-body {background: #ccc}
+body {background: url("https://www.toptal.com/designers/subtlepatterns/patterns/sayagata-400px.png")};
 
-/* Navbar Overrides */
+/* OVERRIDES */
 
-.navbar {border-radius: 0;}
-nav {background: #222;}
+/* Nav */
+
 .nav li a {padding-top: 15px;}
+nav {background: #222;}
+
+.navbar {
+  border-radius: 0;
+  box-shadow: 0px 10px 25px hsla(0, 0%, 0%, 0.5);
+}
 
 .nav li a:hover {
   padding-top: 15px;
@@ -16,4 +22,32 @@ nav {background: #222;}
 nav a:link,
 nav a:visited {
   color: #fff;
+}
+
+/* Heading */
+
+h1, h2, h3, h4 { margin: 0;}
+
+/* Buttons */
+
+.btn-danger {
+  border-radius: 0;
+  padding: 12px;
+}
+
+/* Personal Styles */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shadow {
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.shadow-top {
+  box-shadow: 0px -1px 20px hsla(0, 0%, 0%, 0.5);
 }
