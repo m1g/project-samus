@@ -4,6 +4,15 @@
   z-index: 0;
 }
 
+.info-box {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  z-index: 1000;
+  margin-top: 300px;
+  position: relative;
+}
+
 .banner:before {
   background: linear-gradient(to bottom,rgba(0,0,0,.2) 0,#000 100%);
   position: absolute;
@@ -20,33 +29,45 @@
   background-image: url('http://bit.ly/2qm1mvf');
 }
 
-h1 {background: #000;}
-.margin {margin: 5em 0;}
-
-.info-box {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  color: #fff;
-  width: 300px;
-  height: 250px;
-  z-index: 4;
+.info-box button {
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 .box {
   color: #fff;
-  padding: 1em;
-  margin: 2em 0;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 2px;
+  margin: 2em 0;
   width: 300px;
   height: 250px;
 }
 
 .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.centered {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  height: 250px;
+  background-color: #222;
+  color: #fff;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .centered {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
 }
