@@ -11,19 +11,25 @@ body {background: url("https://www.toptal.com/designers/subtlepatterns/patterns/
 
 .nav li a {padding-top: 15px;}
 
-.navbar {
-  border-radius: 0;
-  box-shadow: 0px 10px 25px hsla(0, 0%, 0%, 0.5);
+.navbar-inverse {
+     background-color: transparent;
+     border-color: #222;
 }
 
-.nav li a:hover {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.icon-bar {
+  background: #222;
+}
+
+
+.navbar {
+  border-radius: 0;
+  box-shadow: 0px 10px 25px hsla(0, 0%, 0%, 0.15);
+  background-color: hsla(255, 100%, 100%, 0.75);
 }
 
 nav a:link,
 nav a:visited {
-  color: #fff;
+  color: #222;
 }
 
 /* Heading */
